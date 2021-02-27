@@ -27,7 +27,7 @@ class SendMailService {
 
         const html = mailTemplateParse(variables)
 
-        const message = await this.client.sendMail({
+        const message = await this.client?.sendMail({
             to,
             subject,
             html,
